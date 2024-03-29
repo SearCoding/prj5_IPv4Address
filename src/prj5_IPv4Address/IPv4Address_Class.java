@@ -1,3 +1,5 @@
+package prj5_IPv4Address;
+
 public class IPv4Address_Class {
     
     private int o1, o2, o3, o4;

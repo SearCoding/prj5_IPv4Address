@@ -1,9 +1,16 @@
+package prj5_IPv4Address;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        int a, b, c, d;
+        runProject();
+
+    }
+
+    public static void runProject(){
+        int a, b, c, d, e, f, g, h;
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Type in an IPv4 Address (Format 192 168 90 15): ");
@@ -15,10 +22,10 @@ public class Main {
 
         System.out.println("Type in the subnet mask (Format 255 255 255 255): ");
 
-        int e = sc.nextInt();
-        int f = sc.nextInt();
-        int g = sc.nextInt();
-        int h = sc.nextInt();
+        e = sc.nextInt();
+        f = sc.nextInt();
+        g = sc.nextInt();
+        h = sc.nextInt();
 
         sc.close();
 
@@ -36,6 +43,5 @@ public class Main {
         System.out.println("Last Host Address: " + lastHost.toString());
 
         System.out.println("\nNasir Deshields - 3/29/2024");
-
     }
 }
