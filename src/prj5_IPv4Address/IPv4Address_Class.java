@@ -108,7 +108,7 @@ public class IPv4Address_Class {
         o1 = o1 | this.o1;
         o2 = o2 | this.o2;
         o3 = o3 | this.o3;
-        o4 = o4 | this.o4;
+        o4 = (o4 | this.o4) - 1;
 
         if(o4 == 255){
             o4--;
