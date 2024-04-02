@@ -3,15 +3,24 @@ package prj5_IPv4Address;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    static Scanner sc = new Scanner(System.in);
 
-        runProject();
+    public static void main(String[] args) throws Exception {
+        int count = 0;
+
+        while (count < 5) {
+            runProject();
+            count++;
+            
+        }
+
+        sc.close();
 
     }
 
-    public static void runProject(){
+    public static void runProject() {
         int a, b, c, d, e, f, g, h;
-        Scanner sc = new Scanner(System.in);
+        
 
         System.out.println("Type in an IPv4 Address (Format 192 168 90 15): ");
 
@@ -27,14 +36,15 @@ public class Main {
         g = sc.nextInt();
         h = sc.nextInt();
 
-        sc.close();
-
         IPv4Address_Class host = new IPv4Address_Class(a, b, c, d);
         IPv4Address_Class mask = new IPv4Address_Class(e, f, g, h);
         IPv4Address_Class network;
         IPv4Address_Class firstHost;
         IPv4Address_Class lastHost;
 
+        System.out.println();
+        System.out.println("Host Address: " + host.toString());
+        System.out.println("Subnet Mask: " + mask.toString());
         network = host.identifyNetworkAddress(mask);
         System.out.println("Network Address: " + network.toString());
         firstHost = network.identifyFirstHost();
