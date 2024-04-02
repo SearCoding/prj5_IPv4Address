@@ -2,9 +2,17 @@ package prj5_IPv4Address;
 
 import java.util.Scanner;
 
+/**
+ * Main class to run the IPv4 Address project.
+ */
 public class Main {
     static Scanner sc = new Scanner(System.in);
 
+    /**
+     * Main method to execute the project.
+     * @param args Command-line arguments.
+     * @throws Exception If an exception occurs during execution.
+     */
     public static void main(String[] args) throws Exception {
         int count = 0;
 
@@ -16,6 +24,9 @@ public class Main {
         sc.close();
     }
 
+    /**
+     * Runs the IPv4 Address project.
+     */
     public static void runProject() {
         int a, b, c, d, e, f, g, h;
 
