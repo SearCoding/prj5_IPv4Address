@@ -1,5 +1,7 @@
 package prj5_IPv4Address;
 
+import java.util.Scanner;
+
 public class IPv4Address_Class {
     
     private int o1, o2, o3, o4;
@@ -71,7 +73,7 @@ public class IPv4Address_Class {
         o1 = o1 | this.o1;
         o2 = o2 | this.o2;
         o3 = o3 | this.o3;
-        o4 = (o4 | this.o4);
+        o4 = o4 | this.o4;
 
 
         if(o4 == 255){
@@ -83,8 +85,6 @@ public class IPv4Address_Class {
         return lastHost;
         
     }
-
-    /*public int subnetMaskNumber(IP){}*/
 
     public String toString(){
         String s = "";
