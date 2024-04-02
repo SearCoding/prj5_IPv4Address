@@ -73,11 +73,9 @@ public class IPv4Address_Class {
         o3 = o3 | this.o3;
         o4 = (o4 | this.o4);
 
-        System.out.println(o4);
 
         if(o4 == 255){
             o4--;
-            System.out.println(o4);
         }
 
         IPv4Address_Class lastHost = new IPv4Address_Class(o1, o2, o3, o4);
