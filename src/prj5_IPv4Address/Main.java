@@ -11,16 +11,13 @@ public class Main {
         while (count < 5) {
             runProject();
             count++;
-            
         }
 
         sc.close();
-
     }
 
     public static void runProject() {
         int a, b, c, d, e, f, g, h;
-        
 
         System.out.println("Type in an IPv4 Address (Format 192 168 90 15): ");
 
