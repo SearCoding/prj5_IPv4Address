@@ -1,7 +1,5 @@
 package prj5_IPv4Address;
 
-import java.util.Scanner;
-
 /**
  * Represents an IPv4 address.
  */
